@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-family: 'Nunito', sans-serif;
+}
+
+    /* navbar started here */
+    
+ .navbar {
+     height: 80px;
+    width: 100%;
+    background-color:skyblue;
+   position: fixed;
+   top: 0;
+ }
+ .checkbtn{
+   font-size: 25px;
+   color: white;
+   line-height: 80px;
+   float: right;
+   margin-right: 40px;
+   display: none;
+ }
+
+ .srchbr{
+   float: right;
+   
+   /* line-height: 80px; */
+   margin-top: 1.2%;
+   margin-right: 2%;
+   width: 300px;
+   position: relative;
+ }
+
+  .srchbr input{
+   width: 80%;
+   height: 38px;
+   line-height: 80px;
+   margin: 0;
+   box-sizing: border-box;
+ } 
+
+  .srchbr i{
+   background-color: #f3a01c;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 0px 0px 0px;
+  position: absolute;
+   
+
+ }
+
+ #check{
+   display: none  ;
+ }
+
+
+
+   @media only screen and (max-width: 815px)
+   {
+      .checkbtn{
+          display: block;
+ 
+      }
+
+      .navbar ul{
+         position: fixed;
+         top: 80px;
+         right: 0;
+         width: 100%;
+         height: 40%;
+         background-color: rgb(179, 225, 244);
+         z-index: 9999;
+         left: -100%;
+         transition: all 0.5s;
+
+      }
+    
+      
+      .navbar ul li{
+         display: block;
+         width: 100%;
+         text-align: center;
+         padding: 5px 0;
+         font-size: 18px;
+         line-height: 40px;
+         font-weight: bold;
+      }
+
+      .navbar ul li a:hover, a.active{
+         background-color: white;
+         color: teal;
+       }
+
+       #check:checked ~ ul{
+         left: 0;
+          }
+
+          .HERO-SECTION {
+            width: 100%;
+            height: 300px;
+          }
+
+   }
+
+ 
+ .logo{
+   font-size: 30px;
+   line-height: 80px;
+   margin-left: 40px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+ }
+ .navbar ul{
+   list-style: none;
+   float: right;
+ }
+
+ .navbar ul li{
+   display: inline-block;
+   margin: 0 10px;
+ }
+
+ .navbar ul li a{
+   color: black;
+   text-decoration: none;
+   padding: 8px 10px;
+   font-size: 18px;
+   line-height: 80px;
+
+ }
+ .navbar ul li a:hover, a.active{
+   background-color: white;
+   cursor: pointer;
+ }
+
+
+   /* hero section started here */
+  
+ .hrsctn{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ 
+ }
+ .hrindx{
+    background-image: url(animated.gif);
+    background-size: 100%  100%;
+
+
+ }
+ .hrtxt{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+ }
+ .hrtxt h1{
+    color: #f3a01c;
+ }
+ .hrtxt p{
+    color: white;
+    font-size: 15px;
+   
+ }
+ .register{
+    height: 40px;
+    height: 40px;
+    margin: 15px 0px 0px 10px;
+ }
+ 
+ .register a{
+ 
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    background-image: rgba(255,255,255,0.2);
+    padding: 10px 10px;
+ }
+ .register a:hover{
+    transform: scale(1.05);
+ }
